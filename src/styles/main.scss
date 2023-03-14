@@ -1,0 +1,32 @@
+@use 'variables' as v;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: v.$main-font;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: clamp(1.5em, 5vw, 3em);
+  font-weight: 700;
+  padding: 1rem 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 1em;
+}
