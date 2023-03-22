@@ -1,0 +1,18 @@
+.content {
+  .card-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    background-color: plum;
+
+    .img-wrapper {
+      margin-top: 1em;
+    }
+
+    .text-wrapper div:nth-of-type(1) {
+      margin-bottom: 0.5em;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+  }
+}

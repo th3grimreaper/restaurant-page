@@ -1,10 +1,5 @@
+import { content, clearContent } from './clear'
 import indoripoha from '../assets/indoripoha.jpg'
-
-const content = document.querySelector('.content')
-
-function clearContent() {
-  content.innerHTML = ''
-}
 
 function menuPage() {
   clearContent()
