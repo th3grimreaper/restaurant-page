@@ -3,19 +3,24 @@ import { content, clearContent } from './clear'
 function aboutPage() {
   clearContent()
 
+  const contArr = [
+    'Kitty Poha Store',
+    '123 Main Street',
+    'Mumbai, Maharashtra 400001',
+    'India',
+    '+91 98765 43210',
+    'admin@kittyhub.co',
+  ]
   const frag = document.createDocumentFragment()
-  const div = document.createElement('div')
-  div.classList.add('address')
-  div.textContent = `Address:
-                    Kitty Poha Store
-                    123 Main Street
-                    Mumbai, Maharashtra 400001
-                    India
+  const ul = document.createElement('ul')
 
-                    Contact Number:
-                    +91 98765 43210`
+  contArr.forEach((value) => {
+    const li = document.createElement('li')
+    li.textContent = value
+    ul.appendChild(li)
+  })
+  frag.appendChild(ul)
 
-  frag.append(div)
   content.appendChild(frag)
 }
 
