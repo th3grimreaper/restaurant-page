@@ -15,6 +15,8 @@ function switchPage(e) {
   }
 }
 
+window.addEventListener('onload', homePage())
+
 navArray.forEach((value) => {
   value.addEventListener('click', switchPage)
 })
