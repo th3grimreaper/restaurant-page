@@ -3,6 +3,12 @@ import { content, clearContent } from './clear'
 function homePage() {
   clearContent()
   const frag = document.createDocumentFragment()
+
+  const cardContainer = document.createElement('section')
+  cardContainer.classList.add('card-container', 'home-content')
+  const textWrapper = document.createElement('div')
+  textWrapper.classList.add('text-wrapper')
+
   const newparaZero = document.createElement('p')
   const newparaOne = document.createElement('p')
   const newparaTwo = document.createElement('p')
@@ -18,9 +24,17 @@ function homePage() {
   newparaOne.classList.add('info')
   newparaTwo.classList.add('info')
 
-  frag.append(newparaZero)
-  frag.append(newparaOne)
-  frag.append(newparaTwo)
+  textWrapper.appendChild(newparaZero)
+  textWrapper.appendChild(newparaOne)
+  textWrapper.appendChild(newparaTwo)
+
+  cardContainer.appendChild(textWrapper)
+
+  // frag.append(newparaZero)
+  // frag.append(newparaOne)
+  // frag.append(newparaTwo)
+
+  frag.append(cardContainer)
 
   content.appendChild(frag)
 }

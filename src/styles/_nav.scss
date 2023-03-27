@@ -1,0 +1,11 @@
+.navigation {
+  display: none;
+  gap: 2em;
+}
+
+a {
+  text-decoration: none;
+  font-size: clamp(1em, 3vw, 1.5em);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
