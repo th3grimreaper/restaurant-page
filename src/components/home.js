@@ -1,4 +1,5 @@
 import { content, clearContent } from './clear'
+import bgImg from '../assets/2481.jpg'
 
 function homePage() {
   clearContent()
@@ -6,6 +7,9 @@ function homePage() {
 
   const cardContainer = document.createElement('section')
   cardContainer.classList.add('card-container', 'home-content')
+
+  cardContainer.style.backgroundImage = `url(${bgImg})`
+
   const textWrapper = document.createElement('div')
   textWrapper.classList.add('text-wrapper')
 

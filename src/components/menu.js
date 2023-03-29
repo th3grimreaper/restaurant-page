@@ -1,10 +1,14 @@
 import { content, clearContent } from './clear'
 import indoripoha from '../assets/indoripoha.jpg'
+import bgImg from '../assets/2481.jpg'
 
 function menuPage() {
   clearContent()
   const cardContainer = document.createElement('section')
   cardContainer.classList.add('card-container')
+
+  cardContainer.style.backgroundImage = `url(${bgImg})`
+
   const textWrapper = document.createElement('div')
   textWrapper.classList.add('text-wrapper')
   const title = document.createElement('div')
