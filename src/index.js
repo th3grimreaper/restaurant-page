@@ -1,6 +1,6 @@
 import homePage from './components/home'
 import menuPage from './components/menu'
-import aboutPage from './components/about'
+import contactPage from './components/contact'
 import './styles/main.scss'
 
 const navArray = document.querySelectorAll('a')
@@ -9,7 +9,7 @@ function switchPage(e) {
   if (e.target.id === 'menu') {
     menuPage()
   } else if (e.target.id === 'about') {
-    aboutPage()
+    contactPage()
   } else {
     homePage()
   }

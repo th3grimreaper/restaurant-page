@@ -8,7 +8,11 @@ function homePage() {
   const cardContainer = document.createElement('section')
   cardContainer.classList.add('card-container', 'home-content')
 
-  cardContainer.style.backgroundImage = `url(${bgImg})`
+  // cardContainer.style.backgroundImage = `url(${bgImg})`
+  const img = document.createElement('img')
+  img.classList.add('bg-image')
+  img.src = bgImg
+  cardContainer.appendChild(img)
 
   const textWrapper = document.createElement('div')
   textWrapper.classList.add('text-wrapper')

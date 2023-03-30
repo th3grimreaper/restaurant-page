@@ -1,10 +1,10 @@
 import { content, clearContent } from './clear'
 
-function aboutPage() {
+function contactPage() {
   clearContent()
 
   const contArr = [
-    'Kitty Poha Store',
+    'Kitty Poha Hub',
     '123 Main Street',
     'Mumbai, Maharashtra 400001',
     'India',
@@ -24,4 +24,4 @@ function aboutPage() {
   content.appendChild(frag)
 }
 
-export default aboutPage
+export default contactPage

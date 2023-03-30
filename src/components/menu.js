@@ -7,7 +7,10 @@ function menuPage() {
   const cardContainer = document.createElement('section')
   cardContainer.classList.add('card-container')
 
-  cardContainer.style.backgroundImage = `url(${bgImg})`
+  const background = document.createElement('img')
+  background.classList.add('bg-image')
+  background.src = bgImg
+  cardContainer.appendChild(background)
 
   const textWrapper = document.createElement('div')
   textWrapper.classList.add('text-wrapper')
