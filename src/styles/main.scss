@@ -30,6 +30,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: v.$white-col;
+  background-color: v.$heading-grey;
 }
 
 .header {

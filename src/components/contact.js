@@ -2,6 +2,13 @@ import { content, clearContent } from './clear'
 
 function contactPage() {
   clearContent()
+  const frag = document.createDocumentFragment()
+
+  const cardContainer = document.createElement('section')
+  cardContainer.classList.add('card-container', 'home-content')
+
+  const textWrapper = document.createElement('div')
+  textWrapper.classList.add('text-wrapper')
 
   const contArr = [
     'Kitty Poha Hub',
@@ -11,7 +18,6 @@ function contactPage() {
     '+91 98765 43210',
     'admin@kittyhub.co',
   ]
-  const frag = document.createDocumentFragment()
   const ul = document.createElement('ul')
 
   contArr.forEach((value) => {
@@ -19,7 +25,9 @@ function contactPage() {
     li.textContent = value
     ul.appendChild(li)
   })
-  frag.appendChild(ul)
+  textWrapper.appendChild(ul)
+  cardContainer.appendChild(textWrapper)
+  frag.appendChild(cardContainer)
 
   content.appendChild(frag)
 }
