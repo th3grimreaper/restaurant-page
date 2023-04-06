@@ -18,8 +18,7 @@ img {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .cont {
@@ -46,4 +45,13 @@ img {
 
 .info {
   margin: 1em 0;
+}
+
+.footer {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  color: v.$white-col;
+  background-color: v.$heading-col;
 }

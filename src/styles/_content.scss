@@ -1,6 +1,7 @@
 @use 'variables' as v;
 
 .content {
+  background-color: v.$content-grey;
   ul {
     margin-top: 2em;
     li {
@@ -13,7 +14,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: v.$content-grey;
     color: v.$white-col;
 
     .img-wrapper {

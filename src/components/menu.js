@@ -3,6 +3,8 @@ import indoripoha from '../assets/indoripoha.jpg'
 
 function menuPage() {
   clearContent()
+  const frag = document.createDocumentFragment()
+
   const cardContainer = document.createElement('section')
   cardContainer.classList.add('card-container')
 
@@ -22,7 +24,9 @@ function menuPage() {
   textWrapper.appendChild(desc)
   cardContainer.appendChild(textWrapper)
   cardContainer.appendChild(imgWrap)
-  content.appendChild(cardContainer)
+  frag.appendChild(cardContainer)
+
+  content.appendChild(frag)
 }
 
 export default menuPage

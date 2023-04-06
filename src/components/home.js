@@ -1,4 +1,5 @@
 import { content, clearContent } from './clear'
+import createFooter from './footer'
 
 function homePage() {
   clearContent()
@@ -31,13 +32,13 @@ function homePage() {
 
   cardContainer.appendChild(textWrapper)
 
-  // frag.append(newparaZero)
-  // frag.append(newparaOne)
-  // frag.append(newparaTwo)
-
   frag.append(cardContainer)
 
   content.appendChild(frag)
+
+  if (!document.querySelector('.footer')) {
+    createFooter()
+  }
 }
 
 export default homePage
