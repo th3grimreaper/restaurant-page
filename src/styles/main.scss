@@ -18,7 +18,9 @@ img {
 }
 
 .container {
-  display: grid;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .cont {

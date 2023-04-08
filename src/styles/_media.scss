@@ -1,9 +1,4 @@
 @media (min-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 10fr 1fr;
-  }
-
   .navigation {
     display: flex;
   }

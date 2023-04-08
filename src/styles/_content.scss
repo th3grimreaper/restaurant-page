@@ -1,6 +1,7 @@
 @use 'variables' as v;
 
 .content {
+  flex: 1;
   background-color: v.$content-grey;
   ul {
     margin-top: 2em;
