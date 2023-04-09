@@ -11,6 +11,7 @@ function menuPage() {
   const textWrapper = document.createElement('div')
   textWrapper.classList.add('text-wrapper')
   const title = document.createElement('div')
+  title.classList.add('menu-title')
   title.textContent = 'Indori Poha'
   const desc = document.createElement('div')
   desc.textContent =

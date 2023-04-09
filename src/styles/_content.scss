@@ -2,7 +2,7 @@
 
 .content {
   flex: 1;
-  background-color: v.$content-grey;
+  background-color: v.$white-col;
   ul {
     margin-top: 2em;
     li {
@@ -15,7 +15,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    color: v.$white-col;
+    color: v.$content-grey;
 
     .img-wrapper {
       margin-top: 1em;
@@ -24,6 +24,10 @@
     .text-wrapper div:nth-of-type(1) {
       margin-bottom: 0.5em;
       font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .menu-title {
+      color: v.$heading-col;
     }
   }
 }
