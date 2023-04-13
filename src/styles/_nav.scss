@@ -1,8 +1,14 @@
 @use 'variables' as v;
 
 .navigation {
-  display: none;
+  display: flex;
   gap: 2em;
+  margin-bottom: 1em;
+}
+
+.nav-icon {
+  width: clamp(30px, 2.5rem, 48px);
+  height: clamp(30px, 2.5rem, 48px);
 }
 
 a {

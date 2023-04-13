@@ -1,4 +1,9 @@
 @media (min-width: 768px) {
+  .heading {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .navigation {
     display: flex;
   }
